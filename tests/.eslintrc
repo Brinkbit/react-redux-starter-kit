@@ -1,11 +1,14 @@
 {
-  "extends" : "../.eslintrc",
-  "env"     : {
-    "mocha" : true
-  },
-  "globals" : {
-    "expect" : false,
-    "should" : false,
-    "sinon"  : false
-  }
+    "parser": "babel-eslint",
+    "extends" : "brinkbit/test",
+    "root": true,
+    "globals": {
+        "expect": true,
+        "sinon": true,
+        "chai": true
+    },
+    "rules": {
+        "import/no-unresolved": 0,
+        "import/extensions": 0,
+    }
 }
